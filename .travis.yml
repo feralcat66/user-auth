@@ -1,8 +1,5 @@
-language: "node_js"
-node_js: "stable"
-before_script:
-  - npm i eslint esm jsdom
-script:
-  - npm test
+language: node_js
+node_js: node 9
 services: mongodb
-MONGODB_URI=mongodb://localhost:27017/travis
+env: MONGODB_URI=mongodb://localhost:27017/travis
+
